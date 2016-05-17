@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>城西之家</title>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</head>
+<body>
+	<div>
+	<div class="header-banner">
+		<div class="top_image_banner">
+			<%=image_tag "banner1.jpg", class: "banner_img up banner_img_height", id:"top_show_img1" %>
+			<%=image_tag "banner2.jpg", class: "banner_img big_bg", id:"top_show_img2" %>
+			<%=image_tag "banner3.jpg", class: "banner_img big_bg", id:"top_show_img3" %>
+		</div>
+
+		<div class="banner-top">
+			<div class="banner-menu">
+				<ul>
+					<li><a href="">城市</a></li>
+					<li><a href="">乡镇</a></li>
+					<li><a href="">村庄</a></li>
+					<li><a href="">生活</a></li>
+					<li><a href="">新闻</a></li>
+				</ul>	
+			</div>
+		</div>
+
+		<div class="top_fix_left">
+				<h3>又到了一年该收麦的季节了<span> 准备开始了吗</span></h3>
+				<p>你还在为收麦烦恼吗<span>找联合一步到位.</span></p>
+				<div class="start_reservation">
+					<a href="#">预  约</a>
+				</div>
+		</div>
+
+
+		<div class="top_fix_right">
+			<%=image_tag "top_fix_img1.jpg", class: "top_fix_img" %>
+			<%=image_tag "top_fix_img2.jpg", class: "top_fix_img" %>
+			<%=image_tag "top_fix_img3.jpg", class: "top_fix_img" %>
+			<%=image_tag "top_fix_img4.jpg", class: "top_fix_img" %>
+		</div>
+	</div>
+	<div class="main">
+		<div class="service_list">
+			<li>
+				<a><%=image_tag "top_fix_img5.jpg" %></a>
+				<p>谷物联合收割机简称联合收割机，就是收割农作物的联合机，在50年代初被称作康拜因，是能够一次完成谷类作物的收割、脱粒、分离茎杆、清除杂余物等工序，从田间直接获取谷粒的收获机械。</p>
+				<p>在联合收割机没出现以前，脱粒机和机械收割机这些器械，大大提高了19世纪时的农业生产率。这使得用比以前少的工人去收割更多的谷物成为可能。但19世纪后期的一项发明，更进一步地提高了这一效率。联合收割机使收割与脱粒机结合在一个整件中，使农民能以单一的操作去完成收割和脱粒。从而节省了人力物力，大大减轻了农民的负担。</p>
+			</li>
+			<li>
+				<a><%=image_tag "top_fix_img6.jpg" %></a>
+				<p>旋耕机是与拖拉机配套完成耕、耙作业的耕耘机械。因其具有碎土能力强、耕后地表平坦等特点，而得到了广泛的应用；同时能够切碎埋在地表以下的根茬，便于播种机作业，为后期播种提供良好种床。正确使用和调整旋耕机，对保持其良好技术状态，确保耕作质量是很重要的。</p>
+				<p>以刀轴水平横置的横轴式旋耕机应用较多。分类有较强的碎土能力，一次作业即能使土壤细碎，土肥掺和均匀，地面平整，达到旱地播种或水田栽插的旋耕机要求，有利于争取农时，提高工效，并能充分利用拖拉机的功率。</p>
+			</li>
+			<li>
+				<a><%=image_tag "top_fix_img7.jpg" %></a>
+				<p>播种机 （seeder） 以作物种子为播种对象的种植机械。用于某类或某种作 物的播种机，常冠以作物种类名称，如谷物条播机、玉米穴播机、棉花播种机、牧草撒播机等。</p>
+				<p>撒出的种子在播种地块上均匀分布的播种机 。常用的机型为离心式撒播机 ，附装在农用运输车后部。由种子箱和撒播轮构成。种子由种子箱落到撒播轮上，在离心力作用播种机下沿切线方向播出，播幅达8 ～12米。也可撒播粉状或粒状肥料、石灰及其他物料。撒播装置也可安装在农用飞机上使用</p>
+			</li>
+			<li>
+				<a><%=image_tag "top_fix_img8.jpg" %></a>
+				<p>几个月后地里长出来健壮的谷物，算了就这样吧，编不下去了。</p>
+			</li>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="copyright text-center">
+				<p>Copyright © 2016.Company name All rights reserved.More Templates <a href="javascript:void(0)" target="_blank" title="模板之家">城西之家</a> - Collect from <a href="javascript:void(0)" title="网页模板" target="_blank">专业收麦子</a></p>
+			</div>
+		</div>
+	</div>
+
+	</div>
+</body>
+</html>
+<style type="text/css">
+	.main{
+		width: 100%;
+		margin: 0 auto;
+		background: #f0f0f0;
+	}
+	.service_list{
+		width: 90%;
+		margin: 0 auto;
+		display: relative;
+		    overflow: hidden;
+	}
+	.service_list li{
+		width: 21%;
+		margin: 1em;
+		float: left;
+		overflow: hidden;
+
+	}
+	.service_list li{
+		text-decoration: none;
+    	overflow: hidden;
+    	display: block;
+    	background: #fff;
+	}
+	.service_list li a{
+	    overflow: hidden;
+	    display: block;
+	    margin-bottom: 1em;
+	}
+    
+	.service_list li a img{
+		width: 100%;
+		-webkit-transform: scale(1, 1);
+    	-webkit-transition-timing-function: ease-out;
+    	-webkit-transition-duration: 500ms;
+    	-moz-transform: scale(1, 1);
+    	-moz-transition-timing-function: ease-out;
+    	-moz-transition-duration: 500ms;
+    	
+	}
+
+	.service_list li a img:hover{
+ 		-webkit-transform: scale(1.15);
+  		-webkit-transition-timing-function: ease-out;
+  		-webkit-transition-duration: 750ms;
+  		-moz-transform: scale(1.15);
+  		-moz-transition-timing-function: ease-out;
+  		-moz-transition-duration: 750ms;
+  		overflow: hidden;
+	}
+	.service_list li p {
+		font-size: 0.9em;
+		font-family: 'Montserrat', sans-serif;
+		line-height: 1.3em;
+		text-align: center;
+		margin: 0.2em;
+	}
+
+	.footer{
+		background: #343b41;
+		padding: 1.3em 0;
+	}
+	.container {
+    	padding-right: 1em;
+    	padding-left: 1em;
+    	margin-right: auto;
+    	margin-left: auto;
+	}
+	.text-center {
+    	text-align: center;
+	}
+	.copyright p {
+    	color: #fff;
+    	font-size: 1em;
+    	font-weight: 300;
+    	letter-spacing: 1px;
+	}
+	.copyright p a {
+    	color: #fff;
+    	font-size: 1em;
+    	font-weight: 300;
+	}
+
+</style>
+
+
+
+
+
