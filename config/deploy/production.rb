@@ -8,6 +8,20 @@ set :branch, 'master'
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 server '139.196.210.99', user: 'root', roles: %w{web app db} 
+server '139.196.210.99',
+  user: 'root',
+  roles: %w{web app db},
+  ssh_options: {
+    user: 'root', # overrides user setting above
+    keys: %w(/home/user_name/.ssh/id_rsa),
+    forward_agent: false,
+    auth_methods: %w(publickey password)
+    # password: 'please use keys'
+  }
+
+
+
+
 set :deploy_to, "/root/projects/story_house/production"
 
 set :rails_env, :production
